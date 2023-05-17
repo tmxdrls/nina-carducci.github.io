@@ -22,7 +22,7 @@ strong{
 }
 
 h1 {
-	font-size: 24px;
+	font-size: 32px;
 }
 
 nav ul {
@@ -105,9 +105,18 @@ nav a {
 	background-color: black;
 	border-radius:0 ;
 }
-.nav-pills .nav-link {
-	color: #000
+.active-tag {
+	background-color: #000000 !important;
+	color: #ffffff !important; 
 }
+.nav-pills .nav-link {
+	color: black
+}
+.active-tag {
+	background-color: #000000; 
+	color: #ffffff;
+  }
+  
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
@@ -119,6 +128,7 @@ nav a {
 	padding-bottom: 100%;
 
 }
+  
 .gallery-item {
 	position: absolute;
 	width: 100%;
@@ -328,7 +338,7 @@ input[type="submit"] {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	.top-header h1, .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;

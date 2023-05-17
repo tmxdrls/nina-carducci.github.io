@@ -12,4 +12,12 @@ $(document).ready(function() {
         showTags: true,
         tagsPosition: 'top'
     });
-});
+});  
+$('.prev-button').click(function() {
+    prevImage();
+  });
+
+$('.next-button').click(function() {
+    nextImage();
+  });
+
