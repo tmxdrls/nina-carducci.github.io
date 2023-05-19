@@ -2,17 +2,20 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
-strong{
+
+strong {
 	font-weight: normal;
 }
+
 .top-header {
 	background-color: white;
 	position: sticky;
-	top:0;
+	top: 0;
 	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
@@ -74,18 +77,22 @@ nav a {
 	width: 100%;
 
 }
+
 #about-me {
 	flex: 2
 }
+
 .about-me__title {
 	font-size: 30px;
 }
+
 .about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
 }
+
 #about-me p {
 	width: 80%;
 }
@@ -93,49 +100,57 @@ nav a {
 #gallery {
 	min-height: 100vh;
 }
-.title{
+
+.title {
 	text-align: center;
 	padding-block: 2em;
 }
+
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
 	color: #fff;
 	background-color: black;
-	border-radius:0 ;
+	border-radius: 0;
 }
+
 .active-tag {
 	background-color: #000000 !important;
-	color: #ffffff !important; 
+	color: #ffffff !important;
 }
+
 .nav-pills .nav-link {
 	color: black
 }
+
 .active-tag {
-	background-color: #000000; 
+	background-color: #000000;
 	color: #ffffff;
-  }
-  
+}
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
 	padding: 0;
 }
-.item-column::after{
+
+.item-column::after {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
 
 }
-  
+
 .gallery-item {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	object-fit:cover;
+	object-fit: cover;
 	padding: .5em;
 }
+
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
@@ -153,12 +168,14 @@ nav a {
 	margin: auto;
 	padding-block: 3em;
 }
+
 .quote__text {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
 
 }
+
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
@@ -167,10 +184,11 @@ nav a {
 
 #services {
 	margin: auto;
-	background-color: #A8D5D8 ;
+	background-color: #A8D5D8;
 	position: relative;
 }
-#services .container::before{
+
+#services .container::before {
 	content: ' ';
 	background-color: #1C6474;
 	position: absolute;
@@ -184,7 +202,7 @@ nav a {
 #services .container {
 	justify-content: space-between;
 	display: flex;
-	padding : 2em 0;
+	padding: 2em 0;
 
 }
 
@@ -202,7 +220,7 @@ nav a {
 
 #contact {
 	margin: auto;
-	background-color: #D8D3A8 ;
+	background-color: #D8D3A8;
 	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -211,6 +229,7 @@ nav a {
 #contact .container {
 	display: flex;
 }
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -221,10 +240,12 @@ nav a {
 	right: 0;
 	z-index: -1;
 }
+
 .form-container {
-	flex : 2;
+	flex: 2;
 
 }
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -249,6 +270,7 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
+
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
@@ -256,27 +278,32 @@ input[type="submit"] {
 
 @media all and (max-width: 1180px) {
 	.picture {
-		flex : 2;
+		flex: 2;
 	}
+
 	#about, #contact .container {
 		align-items: center;
 	}
+
 	.about-me__title {
 		margin-top: 0.7em;
 	}
+
 	#about-me h3, #about-me p {
 		width: 100%;
 	}
 }
 
 @media all and (max-width: 1000px) {
-	#about{
+	#about {
 		flex-direction: column;
 
 	}
+
 	.picture {
 		width: 50%;
 	}
+
 	.picture.left::before {
 		width: 100%;
 		height: 30%;
@@ -286,25 +313,29 @@ input[type="submit"] {
 		left: 0;
 		z-index: -1;
 	}
-	.about-me__title{
+
+	.about-me__title {
 		text-align: center;
 		margin-top: 1em;
 		margin-bottom: 0.5em;
 	}
+
 	#services .container {
 		flex-direction: column;
 	}
+
 	.service {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
 		margin: 2em 0
 	}
-	.service__description{
+
+	.service__description {
 		margin-bottom: 1em;
 	}
 
-	#services .container::before{
+	#services .container::before {
 		width: 30%;
 		height: 100%;
 		bottom: 0;
@@ -316,9 +347,11 @@ input[type="submit"] {
 	#contact .container {
 		flex-direction: column;
 	}
+
 	#contact .picture.right {
 		margin-top: 1em;
 	}
+
 	.picture.right::before {
 		width: 100%;
 		height: 30%;
@@ -334,33 +367,40 @@ input[type="submit"] {
 		flex-direction: column;
 		padding-inline: 0;
 	}
+
 	.top-header .nav, .top-header .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
+
 	.top-header h1, .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
 	}
+
 	.picture.left::before, .picture.right::before {
 		height: 150px;
 	}
+
 	#services .container {
 		align-items: center;
 	}
+
 	.service {
 		max-width: 90%;
 	}
+
 	#about, #contact {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
+
 	form {
 		width: 100%;
 	}
+
 	.picture {
 		width: 80%;
 	}
 }
-

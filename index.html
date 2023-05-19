@@ -24,6 +24,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="./assets/style.css">
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7K8FJV7MSE"></script>
 		<script type="application/ld+json">
 			{
@@ -49,7 +50,26 @@
 				"name": "Photography Services",
 				"description": "Professional photography services",
 				"availability": "http://schema.org/InStock",
-				"priceRange": "$$"
+				"priceSpecification": [
+				  {
+					"@type": "UnitPriceSpecification",
+					"name": "Demi-journée",
+					"price": "350",
+					"priceCurrency": "EUR"
+				  },
+				  {
+					"@type": "UnitPriceSpecification",
+					"name": "Photo",
+					"price": "50",
+					"priceCurrency": "EUR"
+				  },
+				  {
+					"@type": "UnitPriceSpecification",
+					"name": "Album A4",
+					"price": "400",
+					"priceCurrency": "EUR"
+				  }
+				]
 			  },
 			  "serviceArea": {
 				"@type": "GeoShape",
@@ -62,7 +82,7 @@
 				}
 			  }
 			}
-		</script>
+		</script>		  
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -70,7 +90,7 @@
 			
 			gtag('config', 'G-7K8FJV7MSE');
 		</script>
-		<link rel="stylesheet" href="./assets/style.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 	<nav class="top-header">
@@ -91,13 +111,13 @@
 			</aside>
 			<aside class="carousel-inner">
 				<article class="carousel-item active">
-					<img src="./assets/images/slider/picutre-street-man-walk-ryoji-iwata.jpg" class="d-block w-100" alt="Photographie artistique d'un homme en costume marchant dans la rue" loading="lazy">
+					<img src="./assets/images/slider/picutre-street-man-walk-ryoji-iwata.webp" class="d-block w-100" alt="Photographie artistique d'un homme en costume marchant dans la rue" loading="lazy">
 				</article>
 				<article class="carousel-item">
-					<img src="./assets/images/slider/picture_concert-crowd-nicholas-green.jpg" class="d-block w-100" alt="Photographie d'une foule à un évévement.La photographe a capturer le bon moment lors du shooting" loading="lazy">
+					<img src="./assets/images/slider/picture_concert-crowd-nicholas-green.webp" class="d-block w-100" alt="Photographie d'une foule à un évévement.La photographe a capturer le bon moment lors du shooting" loading="lazy">
 				</article>
 				<article class="carousel-item">
-					<img src="./assets/images/slider/picture-weeding-edward-cisneros.jpg" class="d-block w-100" alt="Photographie de qualité d'un couple lors d'un mariage." loading="lazy">
+					<img src="./assets/images/slider/picture-weeding-edward-cisneros.webp" class="d-block w-100" alt="Photographie de qualité d'un couple lors d'un mariage." loading="lazy">
 				</article>
 			</aside>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -114,15 +134,15 @@
 		<h2 class="title">Galerie photo</h2>
 		<aside class="container py-3">
 			<div class="gallery">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/picture-concert-light-aaron-paul.jpg" alt="Photo d'un concert.La photographe à mis en evidence le plafond ,sublimé par le jeu de lumière rouge." loading="lazy"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/picture-portrait-pro-ali-morshedlou.jpg" alt="Portrait profesionnel et sobre d'un homme habillé en costume." loading="lazy"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/picture-pro-office-jason-goodman.jpg" alt="Photographie d'une femme prise en profil 3/4 dans un environement profesionnel."/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/picture-weeding-hannah-busing.jpg" alt="Plan photo avec une technique de perspective qui représentent deux paire de mains qui se joignent." loading="lazy"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/picutre-portrait-ade-tunji.jpg" alt="Portrait artistique d'un homme pris de près avec la lumière dans les yeux." loading="lazy"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/picture-portrait-weeding-jakob-owens.jpg" alt="Photographie de mariage.La photo à la fois familière et profesionnelle." loading="lazy"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/picture-portrait-urabn-nino-van-prattenburg.jpg" alt="Portait artistique d'une jeune femme se tenant derrière un grillage." loading="lazy"/>
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/picture-concert-singer-austin-neill.jpg" alt="Photographie prise lors d'un concert. La photographe se trouve dans la foule et shoote le chanteur." loading="lazy"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/picture-pro-office-mateus-campos-felipe.jpg" alt="Cliché profesionnelle mais aussi artistique d'une femme travaillant sur son ordinateur." loading="lazy"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/picture-concert-light-aaron-paul.webp" alt="Photo d'un concert.La photographe à mis en evidence le plafond ,sublimé par le jeu de lumière rouge." loading="lazy"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/picture-portrait-pro-ali-morshedlou.webp" alt="Portrait profesionnel et sobre d'un homme habillé en costume." loading="lazy"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/picture-pro-office-jason-goodman.webp" alt="Photographie d'une femme prise en profil 3/4 dans un environement profesionnel."/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/picture-weeding-hannah-busing.webp" alt="Plan photo avec une technique de perspective qui représentent deux paire de mains qui se joignent." loading="lazy"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/picutre-portrait-ade-tunji.webp" alt="Portrait artistique d'un homme pris de près avec la lumière dans les yeux." loading="lazy"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/picture-portrait-weeding-jakob-owens.webp" alt="Photographie de mariage.La photo à la fois familière et profesionnelle." loading="lazy"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/picture-portrait-urabn-nino-van-prattenburg.webp" alt="Portait artistique d'une jeune femme se tenant derrière un grillage." loading="lazy"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/picture-concert-singer-austin-neill.webp" alt="Photographie prise lors d'un concert. La photographe se trouve dans la foule et shoote le chanteur." loading="lazy"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/picture-pro-office-mateus-campos-felipe.webp" alt="Cliché profesionnelle mais aussi artistique d'une femme travaillant sur son ordinateur." loading="lazy"/>
 			</div>
 		</aside>
 			<figure class="quote">
@@ -135,7 +155,7 @@
 	</section>
 	<section id="about">
 		<aside class="picture left">
-			<img src="./assets/images/picture-of-Nina-photographer.jpg" alt="Portrait de Nina Carducci, la photographe profesionnelle dont parle la page." loading="lazy">
+			<img src="./assets/images/picture-of-Nina-photographer.webp" alt="Portrait de Nina Carducci, la photographe profesionnelle dont parle la page." loading="lazy">
 		</aside>
 		<aside id="about-me">
 			<h2 class="about-me__title">A propos de moi :</h3>
@@ -214,11 +234,10 @@
 				</form>
 			</article>
 			<figure class="picture right">
-				<img src="./assets/images/picture-camera.jpg" alt="Photo d'un objectif d'appareil photo." loading="lazy">
+				<img src="./assets/images/picture-camera.webp" alt="Photo d'un objectif d'appareil photo." loading="lazy">
 			</figure>
 		</aside>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script defer src="./assets/maugallery.js"></script>
 	<script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script defer src="./assets/scripts.js"></script>

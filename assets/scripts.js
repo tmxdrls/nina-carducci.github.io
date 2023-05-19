@@ -13,11 +13,3 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 });  
-$('.prev-button').click(function() {
-    prevImage();
-  });
-
-$('.next-button').click(function() {
-    nextImage();
-  });
-
