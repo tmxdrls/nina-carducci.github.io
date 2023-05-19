@@ -150,7 +150,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i ;
+          index = (i - 1 + imagesCollection.length) % imagesCollection.length;
         }
       });
       next =
@@ -189,7 +189,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = (i - 1 + imagesCollection.length) % imagesCollection.length;
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
