@@ -12,6 +12,13 @@ strong {
 	font-weight: normal;
 }
 
+h1{
+	font-size: 30px;
+	text-align: center;
+	font-style: italic;
+	padding: 30px 60px 0px;
+
+}
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -24,7 +31,7 @@ strong {
 	align-items: center;
 }
 
-h1 {
+nav div {
 	font-size: 26px;
 }
 
@@ -80,13 +87,12 @@ nav a {
 } 
 
 #about-me {
-	flex: 2
+	flex: 2;
+	align-items: center;
 }
-#about h2:first-of-type{
+
+#title-none{
 	display: none;
-}
-.about-me__title {
-	font-size: 30px;
 }
 
 .about-me__introduction {
@@ -120,8 +126,8 @@ nav a {
 }
 
 .active-tag {
-	background-color: #000000 !important;
-	color: #ffffff !important;
+	background-color: #BEB45A !important;
+	color: black !important;
 }
 
 .nav-pills .nav-link {
